@@ -1,0 +1,224 @@
+*{
+	margin:0;
+	padding:0;
+	color:white;
+	text-decoration:none;
+}
+
+body{
+	background-image:url("../images/body-bg.png");
+}
+#wrapper{
+	margin: 0 auto;
+	background-image:url("../images/page-bg.jpg");
+	max-width:900px;
+	background-color:rgba(100,100,100,0.5);
+	padding:0 30px;
+	box-sizing:border-box;
+	margin-bottom:100px;
+}
+
+
+#page-header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+width:100%;
+background-color:rgba(200,200,200,0.5);
+max-width:900px;
+box-sizing:border-box;
+padding:10px;
+margin-left:-30px;
+flex-wrap:wrap;
+}
+
+h1{
+	font-size:2rem;
+}
+#page-header ul{
+	display:flex;
+	list-style:none;
+}
+
+#page-header ul >li{
+	padding:0 20px;
+}
+
+
+
+main>section{
+	padding-top:70px;
+}
+
+
+/**
+#outer{
+	padding-top:70px;
+}
+**/
+
+
+
+#profile_pic{
+	width:30%;
+}
+#profile_pic img{
+	width:100%;
+	height:auto;
+	min-width:200px;
+	min-height:200px;
+}
+
+main header::after,section::after{
+	content:"";
+	display:block;
+	height:10px;
+	background-image:url("../images/divider.png");
+	margin:30px 20px 20px 20px;
+
+}
+
+.flex-container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+#icons-list{
+	
+	justify-content:space-between;
+	list-style:none;
+
+}
+
+#about-content{
+	display:flex;
+	flex-direction:column;
+//	margin:auto;
+}
+#about-content p{
+	max-width:500px;
+	margin:8px auto;
+	margin-bottom:20px;
+}
+#about main{
+	margin-bottom:30px;
+}
+#about-header{
+	display:flex;
+
+	justify-content:space-between;
+	padding:10px 10px;
+	align-items:center;
+	margin-left:5px;
+}
+#about-header ul{
+
+	display:flex;
+	list-style:none;
+
+
+}
+
+#about-header li{
+	padding:0 5px;
+}
+
+
+#experience main{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+#experience div{
+	width:30%;
+	min-width:200px;
+
+
+}
+#experience header h1,#work header h1,#connect header h1{
+margin-left:10px;
+}
+
+#experience p{
+margin:15px auto;
+//text-align:justify;
+}
+#experience,#work,#connect{
+	padding-top:30px;
+}
+
+#gallery img{
+
+	border:2px solid white;
+}
+label{
+display:block;
+margin-bottom:20px;
+}
+label input,textarea{
+background-color:black;
+border: 2px solid #121212;
+width:200px;
+}
+input[name="email"]{
+
+background-image:url("../images/icon-mail.png");
+background-repeat:no-repeat;	
+}
+
+input[name="name"]{
+
+background-image:url("../images/icon-user.png");
+background-repeat:no-repeat;	
+}
+
+textarea{
+height:100px;
+background-image:url("../images/icon-message.png");
+background-repeat:no-repeat;
+}
+.button{
+margin-left:25%;
+
+}
+.button{
+	padding:5px 10px 5px 10px; 
+    background: #121212;
+	border-radius:3px;
+    border: none;
+    color: #FFF;
+    box-shadow: 2px 2px 2px #000;
+    text-shadow: 1px 1px 1px #000;
+    
+
+}
+#form-div{
+	max-width:40%;
+	min-width:300px;
+	margin-bottom:30px;
+}
+#connect-div{
+	display:flex;
+	flex-direction:column;
+	min-width:300px;
+	max-width:50%;
+}
+#connect-div p{
+	margin:10px auto;
+	margin-bottom:20px;
+}
+
+#connect-div ul{
+list-style:none;
+display:flex;
+}
+#connect-div li{
+	padding:0 10px;
+}
+#connect main{
+	justify-content:space-between;
+}
+
