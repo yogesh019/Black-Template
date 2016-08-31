@@ -76,7 +76,7 @@ main header::after,section::after{
 	display:block;
 	height:10px;
 	background-image:url("../images/divider.png");
-	margin:30px 20px 20px 20px;
+	margin:40px 20px 40px 20px;
 
 }
 
@@ -222,3 +222,103 @@ display:flex;
 	justify-content:space-between;
 }
 
+
+#about p:first-letter{
+	font-size:2rem;
+	font-style:italic;
+}
+
+#about h4{
+	font-size:1.5rem; 
+	font-style:italic;
+}
+input:focus,textarea:focus{
+	background-color:red;
+	background-color:rgba(200,200,200,0.4);
+}
+
+a.show-menu,a.hide-menu{
+	display:none;
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+.fa.fa-bars{
+	font-size:20px;
+	color:black;
+}
+a:hover{
+	color:red;
+}
+
+#wrapper{
+	padding-top:1px;
+}
+section{
+	//margin-bottom:50px;
+//	padding-top:50px;
+}
+@media screen and (max-width: 720px){
+
+	header{
+		flex-direction:column;
+	}
+	
+		#page-header > img{
+		align-self:flex-start;      //align-self  is for individual flex item , cross axis alignment ,align-content is for flex container
+	}
+	#about h4{
+		font-size:2rem;
+		font-style:italic;
+	}
+
+
+	#page-header ul{
+		display:flex;
+		flex-direction:column;
+		height:0;
+		transition: height 2s ease-in-out;
+		overflow:hidden;
+	}
+
+
+
+	
+
+	#page-header nav{
+		width:100%;
+	}
+	#page-header ul >li{
+		width:100%;
+		text-align:center;
+		border-bottom:1px solid black;
+		padding:5px 5px;
+		padding-bottom:5px;
+		box-sizing:border-box;
+		
+	}
+
+
+#page-header:target a.show-menu{
+		display:none;
+	}
+
+	a.show-menu,#page-header:target a.hide-menu{
+		display:block;
+	}
+
+	#page-header:target ul{
+		display:flex;
+		flex-direction:column;
+		height:116px;
+	}
+
+
+	#page-header + main{
+		margin:0;
+		transition: margin 2s ease-in-out;
+	}
+	#page-header:target+ main{
+		margin-top:116px;
+	} 
+}
