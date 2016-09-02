@@ -258,6 +258,43 @@ section{
 	//margin-bottom:50px;
 //	padding-top:50px;
 }
+
+
+
+div.tooltip{
+  margin-top:34px;
+  background-color:rgba(100,100,100,0.4);
+color:white;
+  //background: yellow;
+  height:50px;
+  width:100px;
+  padding:2px;
+  text-align:center;
+  //line-height:50px;
+  border-radius:10px;
+  //border:2px solid black;
+  box-sizing:border-box;
+  display:none;
+  position:relative;
+}
+
+.tooltip::before{
+  content:"";
+  display:block;
+  
+  position:absolute;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-bottom:20px solid rgba(100,100,100,0.4);
+  left:10px;
+  top:-20px;
+}
+
+#about-header li:hover .tooltip{
+  display:block;
+}
+
+
 @media screen and (max-width: 720px){
 
 	header{
