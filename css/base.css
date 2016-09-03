@@ -295,6 +295,61 @@ color:white;
 }
 
 
+
+#cross{
+	position:absolute;
+	color:white;
+	top:10%;
+	right:10%;
+}
+#right{
+	position:absolute;
+	color:white;
+	top:50%;
+	right:20%;
+}
+#left{
+	position:absolute;
+	color:white;
+	top:50%;
+	left:20%;
+}
+
+.lightbox{
+	display:flex;
+	z-index:1000;
+	height:0vh;
+	width:100vw;
+	overflow:hidden;
+	align-items:center;
+	background:rgba(0,0,0,0.8);
+	position:fixed;
+	top:0;
+	left:0;
+	justify-content:center;
+	transition: all 0.6s ease-in;
+
+}
+
+.lightbox img{
+	width:45%;
+	height:auto;
+	border:2px solid white;
+
+}
+.lightbox:target{
+	height:100vh;
+}
+#work:target .lightbox{
+	height:0vh;
+	overflow:hidden;
+}
+#full-2 img{
+	width:95%;
+	height:auto;
+}
+
+
 @media screen and (max-width: 720px){
 
 	header{
