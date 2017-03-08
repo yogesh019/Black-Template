@@ -416,13 +416,13 @@ color:white;
 	} 
 }
 
-0
-down vote
+
+
 /* iPhone 5 Retina regardless of IOS version */
 @media (device-height : 568px) 
 and (device-width : 320px) 
-and (-webkit-min-device-pixel-ratio: 2)
-/* and (orientation : todo: you can add orientation or delete this comment)*/ {
+and (-webkit-min-device-pixel-ratio: 2){
+/* and (orientation : todo: you can add orientation or delete this comment)*/ 
                  /*IPhone 5 only CSS here*/
 	
 body{
