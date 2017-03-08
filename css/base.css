@@ -428,7 +428,7 @@ and (-webkit-min-device-pixel-ratio: 2){
 body{
 	display:flex;
 }
-#experience{
+#experience main{
 	display:flex;
 	flex-wrap:wrap;
 }
