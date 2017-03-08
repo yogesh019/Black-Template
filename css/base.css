@@ -3,6 +3,7 @@
 	padding:0;
 	color:white;
 	text-decoration:none;
+    list-style:none;
 }
 
 body{
@@ -93,7 +94,6 @@ main header::after,section::after{
 
 }
 
-
 #about-content{
 	display:flex;
 	flex-direction:column;
@@ -104,10 +104,6 @@ main header::after,section::after{
 	margin:8px auto;
 	margin-bottom:20px;
 }
-#about-content img{
-	cursor:pointer;
-}
-
 #about main{
 	margin-bottom:30px;
 }
@@ -418,4 +414,13 @@ color:white;
 	#page-header:target+ main{
 		margin-top:116px;
 	} 
+}
+
+@media screen and (max-width: 320px){
+	
+body{
+	display:flex;
+}
+
+
 }
