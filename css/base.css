@@ -93,7 +93,6 @@ main header::after,section::after{
 
 }
 
-
 #about-content{
 	display:flex;
 	flex-direction:column;
@@ -104,10 +103,6 @@ main header::after,section::after{
 	margin:8px auto;
 	margin-bottom:20px;
 }
-#about-content img{
-	cursor:pointer;
-}
-
 #about main{
 	margin-bottom:30px;
 }
@@ -419,3 +414,13 @@ color:white;
 		margin-top:116px;
 	} 
 }
+
+@media screen and (max-width: 320px){
+	
+body{
+	display:flex;
+}
+
+
+}
+
